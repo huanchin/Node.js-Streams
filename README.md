@@ -9,3 +9,7 @@ solution 1: Stream
 this solution can cause back-pressure when readable stream is way more faster then sending the resualt with the response writtable stream (receiving speed >>> responsing speed)
 
 solution 2: stream + pipe
+
+pipe the output of readable stream right into the input of a writable stream 
+ 
+readablSource.pipe(writableDest)
